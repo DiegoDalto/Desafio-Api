@@ -20,9 +20,9 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "Aluno.findAll", query = "SELECT a FROM Aluno a"),
         @NamedQuery(name = "Aluno.findById", query = "SELECT a FROM Aluno a WHERE a.id = :id"),
-        @NamedQuery(name = "Aluno.findByEmailResponsavel", query = "SELECT a FROM Aluno a WHERE a.emailResponsavel = :emailResponsavel"),
+        @NamedQuery(name = "Aluno.findByEmail", query = "SELECT a FROM Aluno a WHERE a.email = :email"),
         @NamedQuery(name = "Aluno.findBySerie", query = "SELECT a FROM Aluno a WHERE a.serie = :serie"),
-        @NamedQuery(name = "Aluno.findByDeficiente", query = "SELECT a FROM Aluno a WHERE a.deficiente = :deficiente"),
+        @NamedQuery(name = "Aluno.findByDeficiente", query = "SELECT a FROM Aluno a WHERE a.tipoDeficiencia = :tipoDeficiencia"),
         @NamedQuery(name = "Aluno.findByDataInicio", query = "SELECT a FROM Aluno a WHERE a.dataInicio = :dataInicio")
 })
 public class Aluno extends Jogador implements Serializable{

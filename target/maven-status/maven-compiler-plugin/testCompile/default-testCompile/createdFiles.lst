@@ -1,0 +1,12 @@
+entity\EnderecoTest.class
+entity\MunicipioTest.class
+entity\ProfessorTest.class
+entity\AlunoTest.class
+entity\JogadorTest.class
+entity\SerieTest.class
+entity\TurmaTest.class
+entity\UsuarioTest.class
+entity\InstituicaoTest.class
+entity\TelefoneTest.class
+utils\CriptografiaTest.class
+entity\ResponsavelTest.class

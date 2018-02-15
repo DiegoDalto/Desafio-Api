@@ -2,53 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d22c9c1-0d48-4afb-8496-9540a18d34f0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Entidade.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/AlunoRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/EnderecoRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/HibernateRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/InstituicaoRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/JogadorRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/MunicipioRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/ProfessorRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/ResponsavelRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/SerieRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/TelefoneRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/TurmaRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/UsuarioRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/AlunoService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/EnderecoService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/GenericService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/InstituicaoService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/JogadorService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/MunicipioService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/ProfessorService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/ResponsavelService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/SerieService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/TelefoneService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/TurmaService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/UsuarioService.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Desafio-Api.iml" afterPath="$PROJECT_DIR$/Desafio-Api.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Aluno.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Aluno.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Endereco.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Endereco.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Instituicao.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Instituicao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Jogador.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Jogador.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Municipio.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Municipio.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Professor.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Professor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Responsavel.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Responsavel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Serie.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Serie.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Telefone.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Telefone.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Turma.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Turma.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Usuario.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/genericlib/domain/GenericEntity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/genericlib/domain/ReadOnlyBaseRepository.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/genericlib/domain/ReadWriteBaseRepository.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/genericlib/service/ReadOnlyService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/genericlib/service/ReadWriteService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/genericlib/web/ReadOnlyController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufms/genericlib/web/ReadWriteController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entity/EnderecoTest.java" afterPath="$PROJECT_DIR$/src/test/java/entity/EnderecoTest.java" />
       <change beforePath="$PROJECT_DIR$/target/desafio-api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/desafio-api-1.0-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
@@ -91,17 +50,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Endereco.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+              <caret line="20" column="119" lean-forward="false" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Aluno.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Aluno.java">
+      <file leaf-file-name="Municipio.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Municipio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="112">
+              <caret line="23" column="108" lean-forward="false" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,15 +68,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnderecoRepository.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/EnderecoRepository.java">
+      <file leaf-file-name="Aluno.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Aluno.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="24" column="126" lean-forward="false" selection-start-line="24" selection-start-column="126" selection-end-line="24" selection-end-column="126" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,8 +83,20 @@
       <file leaf-file-name="Instituicao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Instituicao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            <state relative-caret-position="146">
+              <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HibernateRepository.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/HibernateRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="116" column="5" lean-forward="true" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,8 +107,8 @@
       <file leaf-file-name="Jogador.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Jogador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state relative-caret-position="103">
+              <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,62 +116,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Municipio.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Municipio.java">
+      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Professor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Professor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Responsavel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Responsavel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Telefone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Telefone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Serie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="145">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -230,6 +149,7 @@
       <find>querydsl.apt-maven-plugin.version</find>
       <find>a</find>
       <find>Date</find>
+      <find>org.hibernate.SessionFactory</find>
     </findStrings>
     <replaceStrings>
       <replace>i</replace>
@@ -293,15 +213,15 @@
         <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/TelefoneService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/SerieService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/service/AlunoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Aluno.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Turma.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Responsavel.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Professor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Municipio.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Jogador.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Instituicao.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Endereco.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Municipio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Aluno.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Instituicao.java" />
       </list>
     </option>
   </component>
@@ -611,7 +531,7 @@
       <workItem from="1518607796947" duration="19000" />
       <workItem from="1518617470666" duration="24517000" />
       <workItem from="1518655954614" duration="895000" />
-      <workItem from="1518707670335" duration="14003000" />
+      <workItem from="1518707670335" duration="15398000" />
     </task>
     <servers />
   </component>
@@ -642,7 +562,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59547000" />
+    <option name="totallyTimeSpent" value="60942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -820,8 +740,8 @@
         <state relative-caret-position="187">
           <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#236#266#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#236#266#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -831,21 +751,8 @@
         <state relative-caret-position="187">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#135#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/HibernateRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#404#434#0" expanded="true" />
-            <element signature="e#2450#2451#0" expanded="true" />
-            <element signature="e#2487#2488#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#135#165#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -855,10 +762,10 @@
         <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#225#255#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#225#255#0" expanded="false" />
+            <element signature="e#368#369#0" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -868,8 +775,8 @@
         <state relative-caret-position="374">
           <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#236#266#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#236#266#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -879,10 +786,10 @@
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#275#305#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#275#305#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -892,10 +799,10 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#223#253#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#223#253#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -905,10 +812,10 @@
         <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#225#255#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#225#255#0" expanded="false" />
+            <element signature="e#368#369#0" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -918,10 +825,10 @@
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#219#249#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#219#249#0" expanded="false" />
+            <element signature="e#345#346#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -931,8 +838,8 @@
         <state relative-caret-position="51">
           <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
           <folding>
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -950,9 +857,9 @@
         <state relative-caret-position="272">
           <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#345#346#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -962,7 +869,7 @@
         <state relative-caret-position="238">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -972,15 +879,15 @@
         <state relative-caret-position="470">
           <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#458#459#0" expanded="false" />
+            <element signature="e#506#507#0" expanded="false" />
+            <element signature="e#550#551#0" expanded="false" />
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#756#757#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -990,7 +897,7 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1008,7 +915,7 @@
         <state relative-caret-position="467">
           <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1018,7 +925,7 @@
         <state relative-caret-position="187">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1028,7 +935,7 @@
         <state relative-caret-position="272">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1038,11 +945,11 @@
         <state relative-caret-position="221">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
+            <element signature="e#479#480#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
+            <element signature="e#567#568#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1052,7 +959,7 @@
         <state relative-caret-position="221">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1062,7 +969,7 @@
         <state relative-caret-position="187">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1072,9 +979,9 @@
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#455#456#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1084,17 +991,7 @@
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1104,7 +1001,7 @@
         <state relative-caret-position="144">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,7 +1011,7 @@
         <state relative-caret-position="195">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1124,7 +1021,7 @@
         <state relative-caret-position="195">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1134,7 +1031,7 @@
         <state relative-caret-position="246">
           <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1144,25 +1041,63 @@
         <state relative-caret-position="246">
           <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/EnderecoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#419#420#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Endereco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="119" lean-forward="false" selection-start-line="20" selection-start-column="119" selection-end-line="20" selection-end-column="119" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Municipio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="112">
+          <caret line="23" column="108" lean-forward="false" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Jogador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="103">
+          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Aluno.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="126" lean-forward="false" selection-start-line="24" selection-start-column="126" selection-end-line="24" selection-end-column="126" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1171,40 +1106,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Instituicao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        <state relative-caret-position="146">
+          <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Endereco.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/HibernateRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/entity/Aluno.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="354">
+          <caret line="116" column="5" lean-forward="true" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/ufms/desafio/repository/EnderecoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -21,7 +21,7 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "Instituicao.findAll", query = "SELECT e FROM Instituicao e"),
         @NamedQuery(name = "Instituicao.findById", query = "SELECT e FROM Instituicao e WHERE e.id = :id"),
-        @NamedQuery(name = "Instituicao.findByTipo", query = "SELECT e FROM Instituicao e WHERE e.tipo = :tipo")
+        @NamedQuery(name = "Instituicao.findByTipo", query = "SELECT e FROM Instituicao e WHERE e.tipoInstituicao = :tipoInstituicao")
 })
 public class Instituicao extends Usuario implements Serializable{
 

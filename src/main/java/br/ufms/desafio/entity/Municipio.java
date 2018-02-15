@@ -21,7 +21,7 @@ import java.util.List;
         @NamedQuery(name = "Municipio.findAll", query = "SELECT m FROM Municipio m"),
         @NamedQuery(name = "Municipio.findByCodigoIbge", query = "SELECT m FROM Municipio m WHERE m.codigoIbge = :codigoIbge"),
         @NamedQuery(name = "Municipio.findByNome", query = "SELECT m FROM Municipio m WHERE m.nome = :nome"),
-        @NamedQuery(name = "Municipio.findByUf", query = "SELECT m FROM Municipio m WHERE m.uf = :uf")
+        @NamedQuery(name = "Municipio.findByUf", query = "SELECT m FROM Municipio m WHERE m.tipoUF = :tipoUF")
 })
 public class Municipio extends Entidade implements Serializable {
 
