@@ -5,15 +5,22 @@ import br.ufms.desafio.enumeration.TipoUsuario;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
+
+/**
+ * Created by Diego Dalto
+ * Copyright (c) 2018, UFMS, All rights reserved.
+ */
 
 @Entity
+@PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_responsavel")
 public class Responsavel extends Usuario{
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 
@@ -26,6 +33,9 @@ public class Responsavel extends Usuario{
     @JoinColumn(name = "id", referencedColumnName = "id")
     @MapsId
     private Usuario usuario;
+
+    @ManyToMany(mappedBy = "responsaveis")
+    private List<Aluno> alunos;
 
 
     public Responsavel(){

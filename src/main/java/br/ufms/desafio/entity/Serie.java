@@ -6,6 +6,11 @@ import br.ufms.genericlib.domain.GenericEntity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
+/**
+ * Created by Diego Dalto
+ * Copyright (c) 2018, UFMS, All rights reserved.
+ */
+
 @Entity
 @Table(name = "tb_serie")
 public class Serie extends GenericEntity<Long>{
@@ -13,7 +18,7 @@ public class Serie extends GenericEntity<Long>{
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 

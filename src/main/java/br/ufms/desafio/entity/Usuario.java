@@ -6,16 +6,18 @@ import br.ufms.genericlib.domain.GenericEntity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "tb_usuario")
-public class Usuario extends GenericEntity<Long>{
+public class Usuario extends GenericEntity<Long> implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 

@@ -6,7 +6,8 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 
 /**
- * Created by Diego Dalto on 02/02/2018.
+ * Created by Diego Dalto
+ * Copyright (c) 2018, UFMS, All rights reserved.
  */
 
 @Entity
@@ -16,7 +17,7 @@ public class Endereco extends GenericEntity<Long> {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 
@@ -42,8 +43,8 @@ public class Endereco extends GenericEntity<Long> {
     @Size(min = 9,max = 9)
     private String cep;
 
-    @JoinColumn(name = "codigo_municipio", referencedColumnName = "codigo_ibge")
     @ManyToOne(optional = false)
+    @JoinColumn(name = "codigo_municipio", referencedColumnName = "codigo_ibge")
     private Municipio municipio;
 
     @OneToOne(fetch = FetchType.LAZY, orphanRemoval = true)
@@ -51,6 +52,9 @@ public class Endereco extends GenericEntity<Long> {
     @MapsId
     private Usuario usuario;
 
+    public Endereco(){
+
+    }
 
     public String getLogradouro() {
         return logradouro;

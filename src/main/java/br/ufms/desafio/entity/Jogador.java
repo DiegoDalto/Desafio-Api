@@ -6,14 +6,20 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+/**
+ * Created by Diego Dalto
+ * Copyright (c) 2018, UFMS, All rights reserved.
+ */
+
 @Entity
+@PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_jogador")
 public class Jogador extends Usuario {
 
         private static final long serialVersionUID = 1L;
 
         @Id
-        @GeneratedValue
+        @GeneratedValue(strategy = GenerationType.AUTO)
         @Column(name = "id")
         private Long id;
 

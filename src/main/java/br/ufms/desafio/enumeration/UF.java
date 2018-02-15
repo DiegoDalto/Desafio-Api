@@ -1,5 +1,10 @@
 package br.ufms.desafio.enumeration;
 
+/**
+ * Created by Diego Dalto
+ * Copyright (c) 2018, UFMS, All rights reserved.
+ */
+
 public enum UF {
 
     AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR,

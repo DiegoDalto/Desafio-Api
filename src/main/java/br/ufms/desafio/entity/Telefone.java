@@ -9,7 +9,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * Created by Diego Dalto on 02/02/2018.
+ * Created by Diego Dalto
+ * Copyright (c) 2018, UFMS, All rights reserved.
  */
 
 @Entity
@@ -19,7 +20,7 @@ public class Telefone extends GenericEntity<Long> {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 

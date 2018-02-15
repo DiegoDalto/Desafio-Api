@@ -16,8 +16,6 @@
  */
 package br.ufms.genericlib.web;
 
-import br.ufms.estagio.domain.entity.Concedente;
-import br.ufms.estagio.domain.entity.PessoaJuridica;
 import br.ufms.genericlib.domain.GenericEntity;
 import br.ufms.genericlib.service.ReadOnlyService;
 import java.io.Serializable;
@@ -61,10 +59,6 @@ public class ReadOnlyController<E extends GenericEntity<ID>, ID extends Serializ
         LOG.info("Entidades encontrads com findAll():");
         LOG.info("-------------------------------");
         service.findAll().forEach((entity) -> {
-            if (entity instanceof Concedente) {
-                Concedente<PessoaJuridica> c = (Concedente) entity;
-                LOG.info(c.getDados().getNome());
-            }
             LOG.info(entity.toString());
         });
         LOG.info("-------------------------------\n");

@@ -6,6 +6,12 @@ import br.ufms.genericlib.domain.GenericEntity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
+
+/**
+ * Created by Diego Dalto
+ * Copyright (c) 2018, UFMS, All rights reserved.
+ */
 
 @Entity
 @Table(name = "tb_municipio")
@@ -14,7 +20,7 @@ public class Municipio extends GenericEntity<Long> {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "codigo_ibge")
     private Long codigoIbge;
 
@@ -26,6 +32,9 @@ public class Municipio extends GenericEntity<Long> {
     @Column(name = "uf")
     @NotNull
     private UF tipoUF;
+
+    @OneToMany(mappedBy = "municipio")
+    private List<Endereco> enderecos;
 
 
     public Long getCodigoIbge() {

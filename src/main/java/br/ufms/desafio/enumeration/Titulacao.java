@@ -1,8 +1,10 @@
 package br.ufms.desafio.enumeration;
 
 /**
- * Created by Diego Dalto on 02/02/2018.
+ * Created by Diego Dalto
+ * Copyright (c) 2018, UFMS, All rights reserved.
  */
+
 public enum Titulacao {
 
     GRADUANDO("Graduando"),
