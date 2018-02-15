@@ -5,6 +5,8 @@ import br.ufms.desafio.enumeration.TipoUsuario;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -15,7 +17,13 @@ import java.util.List;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_responsavel")
-public class Responsavel extends Usuario{
+@XmlRootElement
+@NamedQueries({
+        @NamedQuery(name = "Responsavel.findAll", query = "SELECT r FROM Responsavel r"),
+        @NamedQuery(name = "Responsavel.findById", query = "SELECT r FROM Responsavel r WHERE r.id = :id"),
+        @NamedQuery(name = "Responsavel.findByCpf", query = "SELECT r FROM Responsavel r WHERE r.cpf = :cpf")
+})
+public class Responsavel extends Usuario implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
@@ -60,12 +68,19 @@ public class Responsavel extends Usuario{
         this.cpf = cpf;
     }
 
-//    @Override
-//    public Usuario getUsuario() {
-//        return usuario;
-//    }
+    public Usuario getUsuario() {
+        return usuario;
+    }
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
     }
 }

@@ -4,6 +4,8 @@ import br.ufms.desafio.enumeration.TipoUsuario;
 import br.ufms.desafio.enumeration.Titulacao;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -14,7 +16,13 @@ import java.util.List;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_professor")
-public class Professor extends Jogador {
+@XmlRootElement
+@NamedQueries({
+        @NamedQuery(name = "Professor.findAll", query = "SELECT p FROM Professor p"),
+        @NamedQuery(name = "Professor.findById", query = "SELECT p FROM Professor p WHERE p.id = :id"),
+        @NamedQuery(name = "Professor.findByTitulacao", query = "SELECT p FROM Professor p WHERE p.titulacao = :titulacao")
+})
+public class Professor extends Jogador implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
@@ -43,11 +51,45 @@ public class Professor extends Jogador {
         this.setTipoUsuario(TipoUsuario.PROFESSOR);
     }
 
-    public List<Instituicao> getInstituicao() {
+    @Override
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Titulacao getTitulacao() {
+        return titulacao;
+    }
+
+    public void setTitulacao(Titulacao titulacao) {
+        this.titulacao = titulacao;
+    }
+
+    public List<Instituicao> getInstituicaos() {
         return instituicaos;
     }
 
-    public void setInstituicao(List<Instituicao> instituicaos){
+    public void setInstituicaos(List<Instituicao> instituicaos) {
         this.instituicaos = instituicaos;
+    }
+
+    public List<Turma> getTurmas() {
+        return turmas;
+    }
+
+    public void setTurmas(List<Turma> turmas) {
+        this.turmas = turmas;
+    }
+
+    public Responsavel getResponsavel() {
+        return responsavel;
+    }
+
+    public void setResponsavel(Responsavel responsavel) {
+        this.responsavel = responsavel;
     }
 }

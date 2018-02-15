@@ -1,11 +1,12 @@
 package br.ufms.desafio.entity;
 
 import br.ufms.desafio.enumeration.Periodo;
-import br.ufms.genericlib.domain.GenericEntity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -15,7 +16,14 @@ import java.util.List;
 
 @Entity
 @Table(name = "tb_turma")
-public class Turma extends GenericEntity<Long> {
+@XmlRootElement
+@NamedQueries({
+        @NamedQuery(name = "Turma.findAll", query = "SELECT t FROM Turma t"),
+        @NamedQuery(name = "Turma.findById", query = "SELECT t FROM Turma t WHERE t.id = :id"),
+        @NamedQuery(name = "Turma.findByNome", query = "SELECT t FROM Turma t WHERE t.nome = :nome"),
+        @NamedQuery(name = "Turma.findByPeriodo", query = "SELECT t FROM Turma t WHERE t.periodo = :periodo")
+})
+public class Turma extends Entidade implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -44,8 +52,76 @@ public class Turma extends GenericEntity<Long> {
     @JoinColumn(name = "professor_id", referencedColumnName = "id")
     private Professor professor;
 
-    @Override
+    public Turma() {
+    }
+
     public Long getId() {
-        return null;
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Periodo getPeriodo() {
+        return periodo;
+    }
+
+    public void setPeriodo(Periodo periodo) {
+        this.periodo = periodo;
+    }
+
+    public Instituicao getInstituicao() {
+        return instituicao;
+    }
+
+    public void setInstituicao(Instituicao instituicao) {
+        this.instituicao = instituicao;
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }
+
+    public Professor getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 0;
+        hash += (id != null ? id.hashCode() : 0);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (!(object instanceof Turma)) {
+            return false;
+        }
+        Turma other = (Turma) object;
+        return !((this.id == null && other.id != null)
+                || (this.id != null && !this.id.equals(other.id)));
+    }
+
+    @Override
+    public String toString() {
+        return getClass().toString() + "[id=" + id + "]";
     }
 }

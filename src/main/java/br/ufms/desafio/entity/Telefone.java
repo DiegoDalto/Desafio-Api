@@ -1,12 +1,12 @@
 package br.ufms.desafio.entity;
 
 import br.ufms.desafio.enumeration.TipoTelefone;
-import br.ufms.genericlib.domain.GenericEntity;
 
 import javax.persistence.*;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 /**
  * Created by Diego Dalto
@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "tb_telefone")
-public class Telefone extends GenericEntity<Long> {
+public class Telefone extends Entidade implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -44,7 +44,6 @@ public class Telefone extends GenericEntity<Long> {
         this.principal = true;
     }
 
-    @Override
     public Long getId() {
         return id;
     }
@@ -83,5 +82,27 @@ public class Telefone extends GenericEntity<Long> {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 0;
+        hash += (id != null ? id.hashCode() : 0);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (!(object instanceof Telefone)) {
+            return false;
+        }
+        Telefone other = (Telefone) object;
+        return !((this.id == null && other.id != null)
+                || (this.id != null && !this.id.equals(other.id)));
+    }
+
+    @Override
+    public String toString() {
+        return getClass().toString() + "[id=" + id + "]";
     }
 }

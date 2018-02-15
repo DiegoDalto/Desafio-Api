@@ -3,6 +3,8 @@ package br.ufms.desafio.entity;
 import br.ufms.desafio.enumeration.TipoUsuario;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -14,7 +16,16 @@ import java.util.List;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_aluno")
-public class Aluno extends Jogador {
+@XmlRootElement
+@NamedQueries({
+        @NamedQuery(name = "Aluno.findAll", query = "SELECT a FROM Aluno a"),
+        @NamedQuery(name = "Aluno.findById", query = "SELECT a FROM Aluno a WHERE a.id = :id"),
+        @NamedQuery(name = "Aluno.findByEmailResponsavel", query = "SELECT a FROM Aluno a WHERE a.emailResponsavel = :emailResponsavel"),
+        @NamedQuery(name = "Aluno.findBySerie", query = "SELECT a FROM Aluno a WHERE a.serie = :serie"),
+        @NamedQuery(name = "Aluno.findByDeficiente", query = "SELECT a FROM Aluno a WHERE a.deficiente = :deficiente"),
+        @NamedQuery(name = "Aluno.findByDataInicio", query = "SELECT a FROM Aluno a WHERE a.dataInicio = :dataInicio")
+})
+public class Aluno extends Jogador implements Serializable{
 
         private static final long serialVersionUID = 1L;
 
@@ -47,4 +58,54 @@ public class Aluno extends Jogador {
               this.setTipoUsuario(TipoUsuario.ALUNO);
 
         }
+
+    @Override
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDate getDataInicio() {
+        return dataInicio;
+    }
+
+    public void setDataInicio(LocalDate dataInicio) {
+        this.dataInicio = dataInicio;
+    }
+
+    public List<Turma> getTurmas() {
+        return turmas;
+    }
+
+    public void setTurmas(List<Turma> turmas) {
+        this.turmas = turmas;
+    }
+
+    public List<Responsavel> getResponsaveis() {
+        return responsaveis;
+    }
+
+    public void setResponsaveis(List<Responsavel> responsaveis) {
+        this.responsaveis = responsaveis;
+    }
+
+    public Serie getSerie() {
+        return serie;
+    }
+
+    public void setSerie(Serie serie) {
+        this.serie = serie;
+    }
+
+    public Instituicao getInstituicao() {
+        return instituicao;
+    }
+
+    public void setInstituicao(Instituicao instituicao) {
+        this.instituicao = instituicao;
+    }
 }

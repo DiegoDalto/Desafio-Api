@@ -1,9 +1,9 @@
 package br.ufms.desafio.entity;
 
-import br.ufms.genericlib.domain.GenericEntity;
-
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
 /**
  * Created by Diego Dalto
@@ -12,7 +12,18 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "tb_endereco")
-public class Endereco extends GenericEntity<Long> {
+@XmlRootElement
+@NamedQueries({
+        @NamedQuery(name = "Endereco.findAll", query = "SELECT e FROM Endereco e"),
+        @NamedQuery(name = "Endereco.findById", query = "SELECT e FROM Endereco e WHERE e.id = :id"),
+        @NamedQuery(name = "Endereco.findByLogradouro", query = "SELECT e FROM Endereco e WHERE e.logradouro = :logradouro"),
+        @NamedQuery(name = "Endereco.findByNumero", query = "SELECT e FROM Endereco e WHERE e.numero = :numero"),
+        @NamedQuery(name = "Endereco.findBySemNumero", query = "SELECT e FROM Endereco e WHERE e.sn = :sn"),
+        @NamedQuery(name = "Endereco.findByComplemento", query = "SELECT e FROM Endereco e WHERE e.complemento = :complemento"),
+        @NamedQuery(name = "Endereco.findByBairro", query = "SELECT e FROM Endereco e WHERE e.bairro = :bairro"),
+        @NamedQuery(name = "Endereco.findByCep", query = "SELECT e FROM Endereco e WHERE e.cep = :cep")
+})
+public class Endereco extends Entidade implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -54,6 +65,14 @@ public class Endereco extends GenericEntity<Long> {
 
     public Endereco(){
 
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getLogradouro() {
@@ -120,11 +139,25 @@ public class Endereco extends GenericEntity<Long> {
         this.usuario = usuario;
     }
 
-    public Long getId() {
-        return id;
+    @Override
+    public int hashCode() {
+        int hash = 0;
+        hash += (id != null ? id.hashCode() : 0);
+        return hash;
     }
 
-    public void setId(Long id){
-        this.id = id;
+    @Override
+    public boolean equals(Object object) {
+        if (!(object instanceof Endereco)) {
+            return false;
+        }
+        Endereco other = (Endereco) object;
+        return !((this.id == null && other.id != null)
+                || (this.id != null && !this.id.equals(other.id)));
+    }
+
+    @Override
+    public String toString() {
+        return getClass().toString() + "[id=" + id + "]";
     }
 }

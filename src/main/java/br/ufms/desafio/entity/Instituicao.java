@@ -5,6 +5,8 @@ import br.ufms.desafio.enumeration.TipoUsuario;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -15,7 +17,13 @@ import java.util.List;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_instituicao")
-public class Instituicao extends Usuario{
+@XmlRootElement
+@NamedQueries({
+        @NamedQuery(name = "Instituicao.findAll", query = "SELECT e FROM Instituicao e"),
+        @NamedQuery(name = "Instituicao.findById", query = "SELECT e FROM Instituicao e WHERE e.id = :id"),
+        @NamedQuery(name = "Instituicao.findByTipo", query = "SELECT e FROM Instituicao e WHERE e.tipo = :tipo")
+})
+public class Instituicao extends Usuario implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
@@ -49,12 +57,14 @@ public class Instituicao extends Usuario{
         this.setTipoUsuario(TipoUsuario.INSTITUICAO);
     }
 
-    public List<Professor> getProfessores(){
-        return professores;
+    @Override
+    public Long getId() {
+        return id;
     }
 
-    public void setProfessores(List<Professor> professores) {
-        this.professores = professores;
+    @Override
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public TipoInstituicao getTipoInstituicao() {
@@ -65,21 +75,35 @@ public class Instituicao extends Usuario{
         this.tipoInstituicao = tipoInstituicao;
     }
 
-//    public Collection<Usuario> getUsuarios() {
-//        return usuarios;
-//    }
-//
-//    public void setUsuarios(List<Usuario> usuarios) {
-//        this.usuarios = usuarios;
-//    }
-
-    @Override
-    public Long getId() {
-        return id;
+    public List<Professor> getProfessores() {
+        return professores;
     }
 
-    @Override
-    public void setId(Long id) {
-        this.id = id;
+    public void setProfessores(List<Professor> professores) {
+        this.professores = professores;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }
+
+    public List<Turma> getTurmas() {
+        return turmas;
+    }
+
+    public void setTurmas(List<Turma> turmas) {
+        this.turmas = turmas;
     }
 }

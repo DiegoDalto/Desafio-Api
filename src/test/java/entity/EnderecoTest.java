@@ -21,7 +21,7 @@ public class EnderecoTest {
 
         usuario.setId(1L);
 
-        municipio.setCodigoIbge(1L);
+        municipio.setId(1L);
         municipio.setNome("Coxim");
         municipio.setTipoUF(UF.MS);
 
@@ -55,7 +55,7 @@ public class EnderecoTest {
 
         usuario.setId(1L);
 
-        municipio.setCodigoIbge(1L);
+        municipio.setId(1L);
         municipio.setNome("Coxim");
         municipio.setTipoUF(UF.MS);
 

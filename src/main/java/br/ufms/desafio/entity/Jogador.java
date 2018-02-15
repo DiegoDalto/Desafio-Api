@@ -4,6 +4,8 @@ import br.ufms.desafio.enumeration.TipoDeficiencia;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
@@ -14,7 +16,13 @@ import java.time.LocalDate;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_jogador")
-public class Jogador extends Usuario {
+@XmlRootElement
+@NamedQueries({
+        @NamedQuery(name = "Jogador.findAll", query = "SELECT j FROM Jogador j"),
+        @NamedQuery(name = "Jogador.findById", query = "SELECT j FROM Jogador j WHERE j.id = :id"),
+        @NamedQuery(name = "Jogador.findByDataNascimento", query = "SELECT j FROM Jogador j WHERE j.dataNascimento = :dataNascimento")
+})
+public class Jogador extends Usuario implements Serializable {
 
         private static final long serialVersionUID = 1L;
 
@@ -64,10 +72,9 @@ public class Jogador extends Usuario {
                 this.tipoDeficiencia = tipoDeficiencia;
         }
 
-//        @Override
-//        public Usuario getUsuario(){
-//                return usuario;
-//        }
+        public Usuario getUsuario() {
+                return usuario;
+        }
 
         public void setUsuario(Usuario usuario) {
                 this.usuario = usuario;
