@@ -15,9 +15,6 @@
             <name>Diego Dalto</name>
             <email>diego.dalto@hotmail.com</email>
         </developer>
-        <developer>
-            <name>Marcio Ariane</name>
-        </developer>
     </developers>
     <organization>
         <name>Universidade Federal de Mato Grosso do Sul</name>
@@ -78,5 +75,4 @@
             <version>${dbunit.version}</version>
         </dependency>
     </dependencies>
-
 </project>

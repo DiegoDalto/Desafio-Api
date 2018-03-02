@@ -1,13 +1,11 @@
 package br.ufms.desafio.repository;
 
 import br.ufms.desafio.entity.Aluno;
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.NoRepositoryBean;
 
-@Component
-@SuppressWarnings("unchecked")
-public class AlunoRepository extends JogadorRepository<Aluno> {
+public interface AlunoRepository extends JogadorBaseRepository<Aluno> {
 
-    public AlunoRepository() {
-        super(Aluno.class);
-    }
+        @Query("select a from Aluno as a where a.nome = ?1")
+        public Aluno findByNome(String nome);
 }

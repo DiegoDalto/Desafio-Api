@@ -16,12 +16,6 @@ import java.time.LocalDate;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_jogador")
-@XmlRootElement
-@NamedQueries({
-        @NamedQuery(name = "Jogador.findAll", query = "SELECT j FROM Jogador j"),
-        @NamedQuery(name = "Jogador.findById", query = "SELECT j FROM Jogador j WHERE j.id = :id"),
-        @NamedQuery(name = "Jogador.findByDataNascimento", query = "SELECT j FROM Jogador j WHERE j.dataNascimento = :dataNascimento")
-})
 public class Jogador extends Usuario implements Serializable {
 
         private static final long serialVersionUID = 1L;

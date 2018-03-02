@@ -1,11 +1,11 @@
 package br.ufms.desafio.entity;
 
+import br.ufms.desafio.entity.generic.GenericEntity;
 import br.ufms.desafio.enumeration.Periodo;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.List;
 
@@ -16,14 +16,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "tb_turma")
-@XmlRootElement
-@NamedQueries({
-        @NamedQuery(name = "Turma.findAll", query = "SELECT t FROM Turma t"),
-        @NamedQuery(name = "Turma.findById", query = "SELECT t FROM Turma t WHERE t.id = :id"),
-        @NamedQuery(name = "Turma.findByNome", query = "SELECT t FROM Turma t WHERE t.nome = :nome"),
-        @NamedQuery(name = "Turma.findByPeriodo", query = "SELECT t FROM Turma t WHERE t.periodo = :periodo")
-})
-public class Turma extends Entidade implements Serializable {
+public class Turma extends GenericEntity<Long> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

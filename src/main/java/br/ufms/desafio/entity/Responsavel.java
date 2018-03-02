@@ -17,12 +17,6 @@ import java.util.List;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_responsavel")
-@XmlRootElement
-@NamedQueries({
-        @NamedQuery(name = "Responsavel.findAll", query = "SELECT r FROM Responsavel r"),
-        @NamedQuery(name = "Responsavel.findById", query = "SELECT r FROM Responsavel r WHERE r.id = :id"),
-        @NamedQuery(name = "Responsavel.findByCpf", query = "SELECT r FROM Responsavel r WHERE r.cpf = :cpf")
-})
 public class Responsavel extends Usuario implements Serializable{
 
     private static final long serialVersionUID = 1L;
@@ -44,7 +38,6 @@ public class Responsavel extends Usuario implements Serializable{
 
     @ManyToMany(mappedBy = "responsaveis")
     private List<Aluno> alunos;
-
 
     public Responsavel(){
         this.setTipoUsuario(TipoUsuario.RESPONSAVEL);

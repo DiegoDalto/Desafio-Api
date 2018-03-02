@@ -1,8 +1,9 @@
 package br.ufms.desafio.entity;
 
+import br.ufms.desafio.entity.generic.GenericEntity;
+
 import javax.persistence.*;
 import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
 /**
@@ -12,18 +13,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "tb_endereco")
-@XmlRootElement
-@NamedQueries({
-        @NamedQuery(name = "Endereco.findAll", query = "SELECT e FROM Endereco e"),
-        @NamedQuery(name = "Endereco.findById", query = "SELECT e FROM Endereco e WHERE e.id = :id"),
-        @NamedQuery(name = "Endereco.findByLogradouro", query = "SELECT e FROM Endereco e WHERE e.logradouro = :logradouro"),
-        @NamedQuery(name = "Endereco.findByNumero", query = "SELECT e FROM Endereco e WHERE e.numero = :numero"),
-        @NamedQuery(name = "Endereco.findBySemNumero", query = "SELECT e FROM Endereco e WHERE e.semNumero = :semNumero"),
-        @NamedQuery(name = "Endereco.findByComplemento", query = "SELECT e FROM Endereco e WHERE e.complemento = :complemento"),
-        @NamedQuery(name = "Endereco.findByBairro", query = "SELECT e FROM Endereco e WHERE e.bairro = :bairro"),
-        @NamedQuery(name = "Endereco.findByCep", query = "SELECT e FROM Endereco e WHERE e.cep = :cep")
-})
-public class Endereco extends Entidade implements Serializable {
+public class Endereco extends GenericEntity<Long> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

@@ -1,17 +1,12 @@
 package br.ufms.desafio.repository;
 
 import br.ufms.desafio.entity.Responsavel;
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.NoRepositoryBean;
 
-/**
- * Created by Diego Dalto
- * Copyright (c) 2018, UFMS, All rights reserved.
- */
-@Component
-@SuppressWarnings("unchecked")
-public class ResponsavelRepository extends UsuarioRepository<Responsavel> {
 
-    public ResponsavelRepository() {
-        super(Responsavel.class);
-    }
+public interface ResponsavelRepository extends UsuarioBaseRepository<Responsavel> {
+
+    @Query("select r from Responsavel as r where r.nome = ?1")
+    public Responsavel findByNome(String nome);
 }

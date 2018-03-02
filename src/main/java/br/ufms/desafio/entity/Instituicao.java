@@ -17,12 +17,6 @@ import java.util.List;
 @Entity
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_instituicao")
-@XmlRootElement
-@NamedQueries({
-        @NamedQuery(name = "Instituicao.findAll", query = "SELECT e FROM Instituicao e"),
-        @NamedQuery(name = "Instituicao.findById", query = "SELECT e FROM Instituicao e WHERE e.id = :id"),
-        @NamedQuery(name = "Instituicao.findByTipo", query = "SELECT e FROM Instituicao e WHERE e.tipoInstituicao = :tipoInstituicao")
-})
 public class Instituicao extends Usuario implements Serializable{
 
     private static final long serialVersionUID = 1L;

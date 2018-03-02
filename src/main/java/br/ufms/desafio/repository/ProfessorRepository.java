@@ -1,17 +1,11 @@
 package br.ufms.desafio.repository;
 
 import br.ufms.desafio.entity.Professor;
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.NoRepositoryBean;
 
-/**
- * Created by Diego Dalto
- * Copyright (c) 2018, UFMS, All rights reserved.
- */
-@Component
-@SuppressWarnings("unchecked")
-public class ProfessorRepository extends JogadorRepository<Professor> {
+public interface ProfessorRepository extends JogadorBaseRepository<Professor> {
 
-    public ProfessorRepository() {
-        super(Professor.class);
-    }
+    @Query("select p from Professor as p where p.nome = ?1")
+    public Professor findByNome(String nome);
 }

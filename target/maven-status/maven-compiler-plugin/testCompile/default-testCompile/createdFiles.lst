@@ -1,7 +1,7 @@
 entity\EnderecoTest.class
 entity\MunicipioTest.class
 entity\ProfessorTest.class
-entity\AlunoTest.class
+entity\generic\SpringUtil.class
 entity\JogadorTest.class
 entity\SerieTest.class
 entity\TurmaTest.class

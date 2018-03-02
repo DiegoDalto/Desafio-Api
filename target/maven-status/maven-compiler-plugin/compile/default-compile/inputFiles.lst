@@ -1,47 +1,62 @@
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\TurmaService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\ResponsavelRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\TurmaRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\MunicipioRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Jogador.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\UsuarioService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\JogadorService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\TelefoneService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\DesafioApp.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\Sexo.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\InstituicaoService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\Periodo.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\EnderecoRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\ProfessorRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\SerieRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\MunicipioService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Endereco.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\UF.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Telefone.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Turma.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\TipoTelefone.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Entidade.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\AlunoRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Professor.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Serie.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\EnderecoService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\ProfessorService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\NivelEnsino.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\JogadorRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\TipoDeficiencia.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\TipoInstituicao.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\ResponsavelService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Instituicao.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\HibernateRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\UsuarioRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Responsavel.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Aluno.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\TipoUsuario.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Usuario.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\Titulacao.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\AlunoService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\SerieService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\InstituicaoRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\TelefoneRepository.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\GenericService.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Municipio.java
-C:\Users\diego\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\utils\Criptografia.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Jogador.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\generic\ReadWriteController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\InstituicaoController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\DesafioApp.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\MunicipioController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\SerieRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Usuario.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\UsuarioController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\Periodo.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\ProfessorRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Professor.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\TurmaService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\ResponsavelRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\InstituicaoRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Serie.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\NivelEnsino.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\UF.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\UsuarioBaseController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\TipoUsuario.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\TurmaRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\AlunoService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\JogadorBaseService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\SerieService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\generic\ReadOnlyController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\ProfessorService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\EnderecoRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Turma.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\utils\Criptografia.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\EnderecoService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\UsuarioRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\TipoInstituicao.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\AlunoController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\TipoTelefone.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\JogadorBaseController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\ProfessorController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\TelefoneController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\InstituicaoService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Instituicao.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\TelefoneRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\ResponsavelService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Municipio.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\Titulacao.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\generic\ReadOnlyBaseRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\JogadorBaseRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\MunicipioRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\ResponsavelController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\TelefoneService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\UsuarioBaseService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\generic\ReadWriteService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\generic\GenericEntity.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\AlunoRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Telefone.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\controller\TurmaController.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Endereco.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\Sexo.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\MunicipioService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Responsavel.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\enumeration\TipoDeficiencia.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\entity\Aluno.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\service\generic\ReadOnlyService.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\UsuarioBaseRepository.java
+C:\Users\Diego Dalto\Desktop\TCC\Desafio-Api\src\main\java\br\ufms\desafio\repository\generic\ReadWriteBaseRepository.java

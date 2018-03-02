@@ -1,5 +1,6 @@
 package br.ufms.desafio.entity;
 
+import br.ufms.desafio.entity.generic.GenericEntity;
 import br.ufms.desafio.enumeration.NivelEnsino;
 
 import javax.persistence.*;
@@ -13,7 +14,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "tb_serie")
-public class Serie extends Entidade implements Serializable {
+public class Serie extends GenericEntity<Long> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

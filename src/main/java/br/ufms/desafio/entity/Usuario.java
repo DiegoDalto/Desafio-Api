@@ -1,27 +1,18 @@
 package br.ufms.desafio.entity;
 
+import br.ufms.desafio.entity.generic.GenericEntity;
 import br.ufms.desafio.enumeration.TipoUsuario;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "tb_usuario")
-@XmlRootElement
-@NamedQueries({
-        @NamedQuery(name = "Usuario.findAll", query = "SELECT u FROM Usuario u"),
-        @NamedQuery(name = "Usuario.findById", query = "SELECT u FROM Usuario u WHERE u.id = :id"),
-        @NamedQuery(name = "Usuario.findByNome", query = "SELECT u FROM Usuario u WHERE u.nome = :nome"),
-        @NamedQuery(name = "Usuario.findByEmail", query = "SELECT u FROM Usuario u WHERE u.email = :email"),
-        @NamedQuery(name = "Usuario.findByUsuario", query = "SELECT u FROM Usuario u WHERE u.usuario = :usuario"),
-        @NamedQuery(name = "Usuario.findByDataCriacao", query = "SELECT u FROM Usuario u WHERE u.dataCriacao = :dataCriacao")
-})
-public class Usuario extends Entidade implements Serializable{
+public class Usuario extends GenericEntity<Long> implements Serializable{
 
     private static final long serialVersionUID = 1L;
 

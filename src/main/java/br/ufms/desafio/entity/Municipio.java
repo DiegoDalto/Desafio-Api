@@ -1,11 +1,11 @@
 package br.ufms.desafio.entity;
 
+import br.ufms.desafio.entity.generic.GenericEntity;
 import br.ufms.desafio.enumeration.UF;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.List;
 
@@ -16,14 +16,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "tb_municipio")
-@XmlRootElement
-@NamedQueries({
-        @NamedQuery(name = "Municipio.findAll", query = "SELECT m FROM Municipio m"),
-        @NamedQuery(name = "Municipio.findByCodigoIbge", query = "SELECT m FROM Municipio m WHERE m.codigoIbge = :codigoIbge"),
-        @NamedQuery(name = "Municipio.findByNome", query = "SELECT m FROM Municipio m WHERE m.nome = :nome"),
-        @NamedQuery(name = "Municipio.findByUf", query = "SELECT m FROM Municipio m WHERE m.tipoUF = :tipoUF")
-})
-public class Municipio extends Entidade implements Serializable {
+public class Municipio extends GenericEntity<Long> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

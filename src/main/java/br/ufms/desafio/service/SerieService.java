@@ -2,6 +2,7 @@ package br.ufms.desafio.service;
 
 import br.ufms.desafio.entity.Serie;
 import br.ufms.desafio.repository.SerieRepository;
+import br.ufms.desafio.service.generic.ReadWriteService;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,6 +10,6 @@ import org.springframework.stereotype.Component;
  * Copyright (c) 2018, UFMS, All rights reserved.
  */
 @Component
-public class SerieService extends GenericService<Serie, SerieRepository> {
+public class SerieService extends ReadWriteService<Serie, Long, SerieRepository> {
 
 }
