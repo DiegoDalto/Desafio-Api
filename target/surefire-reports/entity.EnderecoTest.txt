@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: entity.EnderecoTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.138 sec <<< FAILURE! - in entity.EnderecoTest
-getAndSetterTest(entity.EnderecoTest)  Time elapsed: 0.047 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at br.ufms.desafio.service.generic.ReadWriteService.save(ReadWriteService.java:36)
-	at entity.EnderecoTest.getAndSetterTest(EnderecoTest.java:32)
-

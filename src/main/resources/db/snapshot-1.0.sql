@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `desafio-db`.`tb_usuario` (
   `usuario` VARCHAR(48) NOT NULL,
   `senha` VARCHAR(64) NOT NULL,
   `data_criacao` DATE NOT NULL,
-  `tipo` ENUM('ALUNO', 'PROFESSOR', 'RESPONSAVEL', 'ESCOLA') NOT NULL,
+  `tipo` ENUM('ALUNO', 'PROFESSOR', 'RESPONSAVEL', 'INSTITUICAO') NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `codigo_UNIQUE` (`id` ASC),
   UNIQUE INDEX `usuario_UNIQUE` (`usuario` ASC),

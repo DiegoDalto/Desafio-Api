@@ -6,6 +6,8 @@
 -- Author: Diego Dalto
 -- Carga de Instituições de Ensino de Coxim-MS.
 
+USE `desafio-db`;
+
 ALTER TABLE tb_usuario AUTO_INCREMENT = 1;
 INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Universidade Federal de Mato Grosso Do Sul - Câmpus de Coxim', 'cpcx@ufms.com.br', 'user', '123', STR_TO_DATE( "31/05/2014", "%d/%m/%Y"), 4);
 INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Escola Estadual Silvio Feirreira', 'ufms1@com.br', 'user1', '123', STR_TO_DATE( "14/02/2018", "%d/%m/%Y"), 4);

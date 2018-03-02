@@ -37,7 +37,7 @@ public class Telefone extends GenericEntity<Long> {
     private Boolean principal;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "usuario_id")
+    @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     private Usuario usuario;
 
     public Telefone() {

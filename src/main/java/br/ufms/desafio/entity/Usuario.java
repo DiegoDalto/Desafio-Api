@@ -2,7 +2,6 @@ package br.ufms.desafio.entity;
 
 import br.ufms.desafio.enumeration.TipoUsuario;
 import br.ufms.spbootlib.domain.GenericEntity;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -43,7 +42,7 @@ public class Usuario extends GenericEntity<Long> {
     @NotNull
     private String senha;
 
-    @OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = true)
+    @OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Endereco endereco;
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
@@ -124,7 +123,6 @@ public class Usuario extends GenericEntity<Long> {
         this.senha = senha;
     }
 
-    @JsonIgnore
     public Endereco getEndereco() {
         return endereco;
     }
@@ -133,7 +131,6 @@ public class Usuario extends GenericEntity<Long> {
         this.endereco = endereco;
     }
 
-    @JsonIgnore
     public Collection<Telefone> getTelefones() {
         return telefones;
     }
