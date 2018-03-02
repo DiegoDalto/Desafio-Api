@@ -1,13 +1,12 @@
 package br.ufms.desafio.entity;
 
-import br.ufms.desafio.entity.generic.GenericEntity;
 import br.ufms.desafio.enumeration.TipoTelefone;
+import br.ufms.spbootlib.domain.GenericEntity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.io.Serializable;
 
 /**
  * Created by Diego Dalto
@@ -16,17 +15,17 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "tb_telefone")
-public class Telefone extends GenericEntity<Long> implements Serializable {
+public class Telefone extends GenericEntity<Long> {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
-    @Enumerated(EnumType.STRING)
     @Column(name = "tipo")
+    @Enumerated(EnumType.STRING)
     private TipoTelefone tipo;
 
     @Column(name = "numero")
@@ -77,6 +76,7 @@ public class Telefone extends GenericEntity<Long> implements Serializable {
         this.principal = principal;
     }
 
+    @JsonIgnore
     public Usuario getUsuario() {
         return usuario;
     }
@@ -85,25 +85,25 @@ public class Telefone extends GenericEntity<Long> implements Serializable {
         this.usuario = usuario;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        if (!(object instanceof Telefone)) {
-            return false;
-        }
-        Telefone other = (Telefone) object;
-        return !((this.id == null && other.id != null)
-                || (this.id != null && !this.id.equals(other.id)));
-    }
-
-    @Override
-    public String toString() {
-        return getClass().toString() + "[id=" + id + "]";
-    }
+//    @Override
+//    public int hashCode() {
+//        int hash = 0;
+//        hash += (id != null ? id.hashCode() : 0);
+//        return hash;
+//    }
+//
+//    @Override
+//    public boolean equals(Object object) {
+//        if (!(object instanceof Telefone)) {
+//            return false;
+//        }
+//        Telefone other = (Telefone) object;
+//        return !((this.id == null && other.id != null)
+//                || (this.id != null && !this.id.equals(other.id)));
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return getClass().toString() + "[id=" + id + "]";
+//    }
 }

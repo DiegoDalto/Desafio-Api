@@ -1,12 +1,11 @@
 package br.ufms.desafio.entity;
 
-import br.ufms.desafio.entity.generic.GenericEntity;
 import br.ufms.desafio.enumeration.Periodo;
+import br.ufms.spbootlib.domain.GenericEntity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -16,25 +15,25 @@ import java.util.List;
 
 @Entity
 @Table(name = "tb_turma")
-public class Turma extends GenericEntity<Long> implements Serializable {
+public class Turma extends GenericEntity<Long> {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
     @Column(name = "nome")
-    @NotNull
     @Size(min = 1, max = 64)
+    @NotNull
     private String nome;
 
     @Column(name = "periodo")
     @Enumerated(EnumType.STRING)
     private Periodo periodo;
 
-    @ManyToOne(optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "instituicao_id", referencedColumnName = "id")
     private Instituicao instituicao;
 

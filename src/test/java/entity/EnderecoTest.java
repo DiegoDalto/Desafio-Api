@@ -1,10 +1,9 @@
 package entity;
 
-import br.ufms.desafio.controller.AlunoController;
-import br.ufms.desafio.entity.*;
-import br.ufms.desafio.enumeration.UF;
-import br.ufms.desafio.repository.AlunoRepository;
-import br.ufms.desafio.service.AlunoService;
+import br.ufms.desafio.entity.Endereco;
+import br.ufms.desafio.entity.Municipio;
+import br.ufms.desafio.entity.Telefone;
+import br.ufms.desafio.entity.Usuario;
 import br.ufms.desafio.service.TelefoneService;
 import org.junit.Assert;
 import org.junit.Test;
@@ -74,7 +73,7 @@ public class EnderecoTest {
 
         municipio.setId(1L);
         municipio.setNome("Coxim");
-        municipio.setTipoUF(UF.MS);
+        municipio.setTipoUF("MS");
 
         endereco.setId(1L);
         endereco.setBairro("São Judas Tadeu");

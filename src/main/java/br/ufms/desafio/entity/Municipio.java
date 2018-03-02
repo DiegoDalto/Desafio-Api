@@ -1,13 +1,10 @@
 package br.ufms.desafio.entity;
 
-import br.ufms.desafio.entity.generic.GenericEntity;
-import br.ufms.desafio.enumeration.UF;
+import br.ufms.spbootlib.domain.GenericEntity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.io.Serializable;
-import java.util.List;
 
 /**
  * Created by Diego Dalto
@@ -16,30 +13,25 @@ import java.util.List;
 
 @Entity
 @Table(name = "tb_municipio")
-public class Municipio extends GenericEntity<Long> implements Serializable {
+public class Municipio extends GenericEntity<Long> {
 
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "codigo_ibge")
+    @NotNull
     private Long codigoIbge;
 
     @Column(name = "nome")
-    @Size(min = 1,max = 64)
+    @Size(min = 1, max = 64)
     @NotNull
     private String nome;
 
     @Column(name = "uf")
+    @Size(min = 2, max = 2)
     @NotNull
-    private UF tipoUF;
-
-    @OneToMany(mappedBy = "municipio")
-    private List<Endereco> enderecos;
-
-    public Municipio(){
-
-    }
+    private String tipoUF;
 
     public void setId(Long codigoIbge) {
         this.codigoIbge = codigoIbge;
@@ -53,45 +45,37 @@ public class Municipio extends GenericEntity<Long> implements Serializable {
         this.nome = nome;
     }
 
-    public UF getTipoUF() {
+    public String getTipoUF() {
         return tipoUF;
     }
 
-    public void setTipoUF(UF tipoUF) {
+    public void setTipoUF(String tipoUF) {
         this.tipoUF = tipoUF;
-    }
-
-    public List<Endereco> getEnderecos() {
-        return enderecos;
-    }
-
-    public void setEnderecos(List<Endereco> enderecos) {
-        this.enderecos = enderecos;
     }
 
     public Long getId() {
         return codigoIbge;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (codigoIbge != null ? codigoIbge.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        if (!(object instanceof Municipio)) {
-            return false;
-        }
-        Municipio other = (Municipio) object;
-        return !((this.codigoIbge == null && other.codigoIbge != null)
-                || (this.codigoIbge != null && !this.codigoIbge.equals(other.codigoIbge)));
-    }
-
-    @Override
-    public String toString() {
-        return getClass().toString() + "[codigoIbge=" + codigoIbge + "]";
-    }
+//    @Override
+//    public int hashCode() {
+//        int hash = 0;
+//        hash += (codigoIbge != null ? codigoIbge.hashCode() : 0);
+//        return hash;
+//    }
+//
+//    @Override
+//    public boolean equals(Object object) {
+//        if (!(object instanceof Municipio)) {
+//            return false;
+//        }
+//        Municipio other = (Municipio) object;
+//        return !((this.codigoIbge == null && other.codigoIbge != null)
+//                || (this.codigoIbge != null && !this.codigoIbge.equals(other.codigoIbge)));
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return getClass().toString() + "[codigoIbge=" + codigoIbge + "]";
+//    }
 }

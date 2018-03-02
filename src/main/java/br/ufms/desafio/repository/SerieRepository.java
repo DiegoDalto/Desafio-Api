@@ -1,7 +1,7 @@
 package br.ufms.desafio.repository;
 
-import br.ufms.desafio.repository.generic.ReadWriteBaseRepository;
 import br.ufms.desafio.entity.Serie;
+import br.ufms.spbootlib.domain.ReadWriteBaseRepository;
 
 /**
  * Created by Diego Dalto

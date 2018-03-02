@@ -1,12 +1,12 @@
 package br.ufms.desafio.entity;
 
 import br.ufms.desafio.enumeration.TipoDeficiencia;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.io.Serializable;
-import java.time.LocalDate;
+import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by Diego Dalto
@@ -14,63 +14,35 @@ import java.time.LocalDate;
  */
 
 @Entity
-@PrimaryKeyJoinColumn(name="id")
 @Table(name = "tb_jogador")
-public class Jogador extends Usuario implements Serializable {
+@Inheritance(strategy = InheritanceType.JOINED)
+@PrimaryKeyJoinColumn(name = "id", referencedColumnName = "id")
+public class Jogador extends Usuario {
 
-        private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.AUTO)
-        @Column(name = "id")
-        private Long id;
+    @Column(name = "data_nascimento")
+    @NotNull
+    private Date dataNascimento;
 
-        @Column(name = "data_nascimento")
-        @NotNull
-        private LocalDate dataNascimento;
+    // TODO: Ver como grava SET no banco de dados usando estas annotations.
+    @Column(name = "deficiencias")
+//    @OneToMany(mappedBy = "jogador", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<TipoDeficiencia> deficiencias;
 
-        @Column(name = "deficiencias")
-        private TipoDeficiencia tipoDeficiencia;
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
 
-        @OneToOne(fetch = FetchType.LAZY, orphanRemoval = true)
-        @JoinColumn(name = "id", referencedColumnName = "id")
-        @MapsId
-        private Usuario usuario;
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
 
-        public Jogador(){
-        }
+    @JsonIgnore
+    public String getTipoDeficiencia() {
+        return deficiencias.toString();
+    }
 
-        @Override
-        public Long getId() {
-                return id;
-        }
-
-        @Override
-        public void setId(Long id) {
-                this.id = id;
-        }
-
-        public LocalDate getDataNascimento() {
-                return dataNascimento;
-        }
-
-        public void setDataNascimento(LocalDate dataNascimento) {
-                this.dataNascimento = dataNascimento;
-        }
-
-        public TipoDeficiencia getTipoDeficiencia() {
-                return tipoDeficiencia;
-        }
-
-        public void setTipoDeficiencia(TipoDeficiencia tipoDeficiencia) {
-                this.tipoDeficiencia = tipoDeficiencia;
-        }
-
-        public Usuario getUsuario() {
-                return usuario;
-        }
-
-        public void setUsuario(Usuario usuario) {
-                this.usuario = usuario;
-        }
+    public void setTipoDeficiencia(String tipoDeficiencia) {
+    }
 }

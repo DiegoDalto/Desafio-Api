@@ -1,7 +1,7 @@
 package br.ufms.desafio.repository;
 
-import br.ufms.desafio.repository.generic.ReadWriteBaseRepository;
 import br.ufms.desafio.entity.Usuario;
+import br.ufms.spbootlib.domain.ReadWriteBaseRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.NoRepositoryBean;
 

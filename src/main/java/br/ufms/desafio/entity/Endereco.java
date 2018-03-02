@@ -1,10 +1,10 @@
 package br.ufms.desafio.entity;
 
-import br.ufms.desafio.entity.generic.GenericEntity;
+import br.ufms.spbootlib.domain.GenericEntity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
-import java.io.Serializable;
 
 /**
  * Created by Diego Dalto
@@ -13,35 +13,34 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "tb_endereco")
-public class Endereco extends GenericEntity<Long> implements Serializable {
+public class Endereco extends GenericEntity<Long> {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 
     @Column(name = "logradouro")
-    @Size(min = 1,max = 128)
+    @Size(min = 1, max = 128)
     private String logradouro;
 
     @Column(name = "numero")
-    @Size(min = 1,max = 4)
     private Short numero;
 
     @Column(name = "s_n")
     private Boolean semNumero;
 
     @Column(name = "complemento")
-    @Size(min = 1,max = 64)
+    @Size(min = 1, max = 64)
     private String complemento;
 
     @Column(name = "bairro")
+    @Size(min = 1, max = 128)
     private String bairro;
 
     @Column(name = "cep")
-    @Size(min = 9,max = 9)
+    @Size(min = 8, max = 9)
     private String cep;
 
     @ManyToOne(optional = false)
@@ -52,10 +51,6 @@ public class Endereco extends GenericEntity<Long> implements Serializable {
     @JoinColumn(name = "id", referencedColumnName = "id")
     @MapsId
     private Usuario usuario;
-
-    public Endereco(){
-
-    }
 
     public Long getId() {
         return id;
@@ -113,6 +108,7 @@ public class Endereco extends GenericEntity<Long> implements Serializable {
         this.cep = cep;
     }
 
+    @JsonIgnore
     public Municipio getMunicipio() {
         return municipio;
     }
@@ -121,6 +117,7 @@ public class Endereco extends GenericEntity<Long> implements Serializable {
         this.municipio = municipio;
     }
 
+    @JsonIgnore
     public Usuario getUsuario() {
         return usuario;
     }
@@ -129,25 +126,25 @@ public class Endereco extends GenericEntity<Long> implements Serializable {
         this.usuario = usuario;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        if (!(object instanceof Endereco)) {
-            return false;
-        }
-        Endereco other = (Endereco) object;
-        return !((this.id == null && other.id != null)
-                || (this.id != null && !this.id.equals(other.id)));
-    }
-
-    @Override
-    public String toString() {
-        return getClass().toString() + "[id=" + id + "]";
-    }
+//    @Override
+//    public int hashCode() {
+//        int hash = 0;
+//        hash += (id != null ? id.hashCode() : 0);
+//        return hash;
+//    }
+//
+//    @Override
+//    public boolean equals(Object object) {
+//        if (!(object instanceof Endereco)) {
+//            return false;
+//        }
+//        Endereco other = (Endereco) object;
+//        return !((this.id == null && other.id != null)
+//                || (this.id != null && !this.id.equals(other.id)));
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return getClass().toString() + "[id=" + id + "]";
+//    }
 }

@@ -2,7 +2,7 @@ package br.ufms.desafio.service;
 
 import br.ufms.desafio.entity.Municipio;
 import br.ufms.desafio.repository.MunicipioRepository;
-import br.ufms.desafio.service.generic.ReadWriteService;
+import br.ufms.spbootlib.service.ReadWriteService;
 import org.springframework.stereotype.Component;
 
 

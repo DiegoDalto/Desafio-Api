@@ -2,10 +2,9 @@ package br.ufms.desafio.entity;
 
 import br.ufms.desafio.enumeration.TipoUsuario;
 import br.ufms.desafio.enumeration.Titulacao;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -14,45 +13,50 @@ import java.util.List;
  */
 
 @Entity
-@PrimaryKeyJoinColumn(name="id")
+@PrimaryKeyJoinColumn(name = "id")
 @Table(name = "tb_professor")
-public class Professor extends Jogador implements Serializable{
+public class Professor extends Jogador {
 
     private static final long serialVersionUID = 1L;
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Long id;
 
     @Column(name = "titulacao")
     @Enumerated(EnumType.STRING)
     private Titulacao titulacao;
 
-    @ManyToMany(mappedBy = "professores")
-    private List<Instituicao> instituicaos;
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(name = "tb_instituicao_professor",
+            joinColumns = @JoinColumn(name = "professor_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "instituicao_id", referencedColumnName = "id"))
+    private List<Instituicao> instituicoes;
 
-    @OneToMany(mappedBy = "professor")
+    @OneToMany(mappedBy = "professor", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Turma> turmas;
 
-    @OneToOne(fetch = FetchType.LAZY, orphanRemoval = true)
-    @JoinColumn(name = "id", referencedColumnName = "professor_id")
-    @MapsId
-    private Responsavel responsavel;
-
-    /*Construtor*/
-    public Professor(){
+    /**
+     * Construtor
+     */
+    public Professor() {
         this.setTipoUsuario(TipoUsuario.PROFESSOR);
     }
 
-    @Override
-    public Long getId() {
-        return id;
+    /**
+     * Adiciona uma turma a este professor.
+     *
+     * @param turma
+     */
+    public void addTurma(Turma turma) {
+        turmas.add(turma);
+        turma.setProfessor(this);
     }
 
-    @Override
-    public void setId(Long id) {
-        this.id = id;
+    /**
+     * Remove a turma deste professor.
+     *
+     * @param turma
+     */
+    public void removeTelefone(Turma turma) {
+        turmas.remove(turma);
+        turma.setProfessor(null);
     }
 
     public Titulacao getTitulacao() {
@@ -64,26 +68,19 @@ public class Professor extends Jogador implements Serializable{
     }
 
     public List<Instituicao> getInstituicaos() {
-        return instituicaos;
+        return instituicoes;
     }
 
     public void setInstituicaos(List<Instituicao> instituicaos) {
-        this.instituicaos = instituicaos;
+        this.instituicoes = instituicaos;
     }
 
+    @JsonIgnore
     public List<Turma> getTurmas() {
         return turmas;
     }
 
     public void setTurmas(List<Turma> turmas) {
         this.turmas = turmas;
-    }
-
-    public Responsavel getResponsavel() {
-        return responsavel;
-    }
-
-    public void setResponsavel(Responsavel responsavel) {
-        this.responsavel = responsavel;
     }
 }
