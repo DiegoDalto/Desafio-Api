@@ -2,7 +2,6 @@
 //
 //import br.ufms.desafio.entity.Instituicao;
 //import org.springframework.data.jpa.repository.Query;
-//import org.springframework.data.repository.NoRepositoryBean;
 //
 //public interface InstituicaoRepository extends UsuarioBaseRepository<Instituicao> {
 //

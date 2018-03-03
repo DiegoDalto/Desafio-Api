@@ -2,7 +2,6 @@
 //
 //import br.ufms.desafio.entity.Aluno;
 //import org.springframework.data.jpa.repository.Query;
-//import org.springframework.data.repository.NoRepositoryBean;
 //
 //public interface AlunoRepository extends JogadorBaseRepository<Aluno> {
 //

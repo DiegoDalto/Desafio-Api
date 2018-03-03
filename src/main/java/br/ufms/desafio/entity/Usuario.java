@@ -65,7 +65,6 @@ public class Usuario extends GenericEntity<Long> {
 
     /**
      * Adiciona um telefone a esta pessoa.
-     *
      * @param telefone
      */
     public void addTelefone(Telefone telefone) {
@@ -75,7 +74,6 @@ public class Usuario extends GenericEntity<Long> {
 
     /**
      * Remove um telefone desta pessoa.
-     *
      * @param telefone
      */
     public void removeTelefone(Telefone telefone) {
@@ -154,26 +152,4 @@ public class Usuario extends GenericEntity<Long> {
     public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
     }
-
-//    @Override
-//    public int hashCode() {
-//        int hash = 0;
-//        hash += (id != null ? id.hashCode() : 0);
-//        return hash;
-//    }
-//
-//    @Override
-//    public boolean equals(Object object) {
-//        if (!(object instanceof Usuario)) {
-//            return false;
-//        }
-//        Usuario other = (Usuario) object;
-//        return !((this.id == null && other.id != null)
-//                || (this.id != null && !this.id.equals(other.id)));
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return getClass().toString() + "[id=" + id + "]";
-//    }
 }

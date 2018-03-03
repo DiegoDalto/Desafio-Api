@@ -10,7 +10,8 @@ public enum  TipoUsuario {
     ALUNO("Aluno"),
     PROFESSOR("Professor"),
     RESPONSAVEL("Responsável"),
-    INSTITUICAO("Instituição");
+    INSTITUICAO("Instituição"),
+    ADMIN("Admin");
 
     private String tipoUsuario;
 

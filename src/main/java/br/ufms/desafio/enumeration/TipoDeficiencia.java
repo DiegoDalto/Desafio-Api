@@ -6,9 +6,9 @@ package br.ufms.desafio.enumeration;
  */
 public enum TipoDeficiencia {
 
-    AUDITIVA("Celular"),
-    FISICA("Residencial"),
-    MENTAL("Institucional"),
+    AUDITIVA("Auditiva"),
+    FISICA("Física"),
+    MENTAL("Mental"),
     VISUAL("Visual");
 
     private String tipoDeficiencia;

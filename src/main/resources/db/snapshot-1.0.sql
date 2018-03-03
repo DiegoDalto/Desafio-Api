@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `desafio-db`.`tb_usuario` (
   `usuario` VARCHAR(48) NOT NULL,
   `senha` VARCHAR(64) NOT NULL,
   `data_criacao` DATE NOT NULL,
-  `tipo` ENUM('ALUNO', 'PROFESSOR', 'RESPONSAVEL', 'INSTITUICAO') NOT NULL,
+  `tipo` ENUM('ALUNO', 'PROFESSOR', 'RESPONSAVEL', 'INSTITUICAO', 'ADMIN') NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `codigo_UNIQUE` (`id` ASC),
   UNIQUE INDEX `usuario_UNIQUE` (`usuario` ASC),
@@ -68,13 +68,13 @@ CREATE TABLE IF NOT EXISTS `desafio-db`.`tb_aluno` (
   `instituicao_id` INT(10) UNSIGNED NULL DEFAULT NULL,
   `data_inicio` DATE NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_aluno_escola` (`instituicao_id` ASC),
+  INDEX `fk_aluno_instituicao` (`instituicao_id` ASC),
   CONSTRAINT `fk_aluno_jogador`
     FOREIGN KEY (`id`)
     REFERENCES `desafio-db`.`tb_jogador` (`id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
-  CONSTRAINT `fk_aluno_escola`
+  CONSTRAINT `fk_aluno_instituicao`
     FOREIGN KEY (`instituicao_id`)
     REFERENCES `desafio-db`.`tb_instituicao` (`id`)
     ON DELETE SET NULL
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `desafio-db`.`tb_instituicao` (
   `id` INT(10) UNSIGNED NOT NULL,
   `tipo` ENUM('MUNICIPAL', 'ESTADUAL', 'FEDERAL', 'PARTICULAR') NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_escola_usuario`
+  CONSTRAINT `fk_instituicao_usuario`
     FOREIGN KEY (`id`)
     REFERENCES `desafio-db`.`tb_usuario` (`id`)
     ON DELETE CASCADE
@@ -115,13 +115,13 @@ CREATE TABLE IF NOT EXISTS `desafio-db`.`tb_turma` (
   PRIMARY KEY (`id`),
   UNIQUE INDEX `codigo_UNIQUE` (`id` ASC),
   INDEX `fk_turma_professor` (`professor_id` ASC),
-  INDEX `fk_turma_escola` (`instituicao_id` ASC),
+  INDEX `fk_turma_instituicao` (`instituicao_id` ASC),
   CONSTRAINT `fk_turma_professor`
     FOREIGN KEY (`professor_id`)
     REFERENCES `desafio-db`.`tb_professor` (`id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
-  CONSTRAINT `fk_turma_escola`
+  CONSTRAINT `fk_turma_instituicao`
     FOREIGN KEY (`instituicao_id`)
     REFERENCES `desafio-db`.`tb_instituicao` (`id`)
     ON DELETE SET NULL
@@ -152,14 +152,14 @@ CREATE TABLE IF NOT EXISTS `desafio-db`.`tb_instituicao_professor` (
   `instituicao_id` INT(10) UNSIGNED NOT NULL,
   `professor_id` INT(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`instituicao_id`, `professor_id`),
-  INDEX `fk_escola_professor_professor` (`professor_id` ASC),
-  INDEX `fk_escola_professor_escola` (`instituicao_id` ASC),
-  CONSTRAINT `fk_escola_professor_escola`
+  INDEX `fk_instituicao_professor_professor` (`professor_id` ASC),
+  INDEX `fk_instituicao_professor_instituicao` (`instituicao_id` ASC),
+  CONSTRAINT `fk_instituicao_professor_instituicao`
     FOREIGN KEY (`instituicao_id`)
     REFERENCES `desafio-db`.`tb_instituicao` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_escola_professor_professor`
+  CONSTRAINT `fk_instituicao_professor_professor`
     FOREIGN KEY (`professor_id`)
     REFERENCES `desafio-db`.`tb_professor` (`id`)
     ON DELETE NO ACTION
