@@ -1,6 +1,7 @@
 package br.ufms.desafio.entity;
 
 import br.ufms.desafio.enumeration.TipoUsuario;
+import br.ufms.desafio.utils.Criptografia;
 import br.ufms.spbootlib.domain.GenericEntity;
 
 import javax.persistence.*;

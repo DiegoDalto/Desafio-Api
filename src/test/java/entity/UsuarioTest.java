@@ -24,17 +24,14 @@ public class UsuarioTest {
         Municipio municipio = new Municipio();
         Endereco endereco = new Endereco();
 
-        telefone.setId(1L);
         telefone.setNumero("67999174009");
         telefone.setPrincipal(true);
         telefone.setTipo(TipoTelefone.CELULAR);
         telefone.setUsuario(usuario);
 
-        municipio.setId(1L);
         municipio.setTipoUF("MS");
         municipio.setNome("Coxim");
 
-        endereco.setId(1L);
         endereco.setBairro("São Judas Tadeu");
         endereco.setCep("7940000");
         endereco.setComplemento("Casa residencial");
@@ -43,7 +40,6 @@ public class UsuarioTest {
         endereco.setSemNumero(false);
         endereco.setMunicipio(municipio);
 
-        usuario.setId(1L);
         usuario.setDataCriacao(new Date());
         usuario.setEmail("diego.dalto@hotmail.com");
         usuario.setEndereco(endereco);

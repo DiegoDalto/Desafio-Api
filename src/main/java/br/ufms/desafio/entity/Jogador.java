@@ -11,20 +11,20 @@ import java.util.Date;
 
 @Entity
 @Table(name = "tb_jogador")
-@Inheritance(strategy = InheritanceType.JOINED)
+//@Inheritance(strategy = InheritanceType.JOINED)
 @PrimaryKeyJoinColumn(name = "id", referencedColumnName = "id")
 public class Jogador extends Usuario {
 
     private static final long serialVersionUID = 1L;
 
     @Column(name = "data_nascimento")
+    @Temporal(TemporalType.TIMESTAMP)
     @NotNull
     private Date dataNascimento;
 
-    // TODO: Ver como grava SET no banco de dados usando estas annotations.
     //@Column(name = "deficiencias")
     //@OneToMany(mappedBy = "jogador", cascade = CascadeType.ALL, orphanRemoval = true)
-    //private Set<TipoDeficiencia> deficiencias;
+    //private Collection<TipoDeficiencia> deficiencia;
 
     public Date getDataNascimento() {
         return dataNascimento;
@@ -32,13 +32,5 @@ public class Jogador extends Usuario {
 
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
-    }
-
-//    @JsonIgnore
-//    public String getTipoDeficiencia() {
-//        return deficiencias.toString();
-//    }
-
-    public void setTipoDeficiencia(String tipoDeficiencia) {
     }
 }

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/municipios")
+@RequestMapping(path = "/municipio")
 public class MunicipioController extends ReadOnlyController<Municipio, Long, MunicipioService> {
 
 }
