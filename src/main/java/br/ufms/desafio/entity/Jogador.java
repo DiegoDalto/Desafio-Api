@@ -1,8 +1,13 @@
 package br.ufms.desafio.entity;
 
+import br.ufms.desafio.enumeration.TipoDeficiencia;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Diego Dalto
@@ -25,6 +30,10 @@ public class Jogador extends Usuario {
     //@Column(name = "deficiencias")
     //@OneToMany(mappedBy = "jogador", cascade = CascadeType.ALL, orphanRemoval = true)
     //private Collection<TipoDeficiencia> deficiencia;
+    @Column(name = "deficiencias")
+    private String deficiencias;
+
+//    private Set<TipoDeficiencia> deficienciaSet = new HashSet<>();
 
     public Date getDataNascimento() {
         return dataNascimento;
@@ -33,4 +42,23 @@ public class Jogador extends Usuario {
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
+    public String getDeficiencias() {
+        return deficiencias;
+    }
+
+    public void setDeficiencias(String deficiencias) {
+        this.deficiencias = deficiencias;
+    }
+
+//    @JsonIgnore
+//    public Set<TipoDeficiencia> getDeficienciasSet() {
+//        deficienciaSet.clear();
+//        String[] array = deficiencias.split(",");
+//        for (String s : array) {
+//            System.out.println(s);
+//            deficienciaSet.add(TipoDeficiencia.valueOf(s));
+//        }
+//        return deficienciaSet;
+//    }
 }

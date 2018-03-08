@@ -1,110 +1,17 @@
 -- MySQL Workbench Synchronization
 -- Generated: 2018-02-14 20:25
--- Model: Desafio-DB
+-- Model: desafio-db
 -- Version: 1.0
 -- Project: Desafio
 -- Author: Diego Dalto
--- Carga de Instituições de Ensino de Coxim-MS.
+-- Carga de Dados, para o banco desafio-db.
 
 USE `desafio-db`;
 
-/*carga usuario*/
-ALTER TABLE tb_usuario
-  AUTO_INCREMENT = 1;
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('Universidade Federal de Mato Grosso Do Sul - Câmpus de Coxim', 'cpcx@ufms.com.br', 'user', '123',
-        STR_TO_DATE("31/05/2014", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('Escola Estadual Silvio Feirreira', 'ufms1@com.br', 'user1', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('Unopar', 'ufms2@com.br', 'user2', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('CESQP - Centro de Ensino Superior e Qualificação Profissional', 'ufms3@com.br', 'user3', '123',
-   STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('UEMS - Campus Coxim', 'ufms4@com.br', 'user4', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('Escola Estadual Padre Nunes', 'ufms5@com.br', 'user5', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('Escola Novo Mundo', 'ufms6@com.br', 'user6', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('IFMS - Instituto Federal de Mato Grosso do Sul', 'ufms7@com.br', 'user7', '123',
-   STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('Escola Municipal Marechal Rondon', 'ufms8@com.br', 'user8', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('Faculdades Integradas de Coxim - Fico', 'ufms9@com.br', 'user9', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('Escola Estadual DE 1º E 2º GRAUS Sílvio Ferreira', 'ufms10@com.br', 'user10', '123',
-   STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('EM Estudante William Tavares de Oliveira - Pólo', 'ufms11@com.br', 'user11', '123',
-   STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('Damásio Educacional e Ibmec - Coxim', 'ufms12@com.br', 'user12', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('Colégio PROFª. Julieta Mota Dos Santos', 'ufms13@com.br', 'user13', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"),
-   4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('Escola Estadual Professora Clarice Rondon dos Santos', 'ufms14@com.br', 'user14', '123',
-   STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('Escola Estadual Viriato Bandeira', 'ufms15@com.br', 'user15', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('Escola Estadual Semiramis da Rocha', 'ufms16@com.br', 'user16', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)
-VALUES ('Escola Particular Santa Teresa', 'ufms17@com.br', 'user17', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES
-  ('Escola Estadual Pedro Mendes Fontoura', 'ufms18@com.br', 'user18', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 4);
-
-/*carga instituição*/
-INSERT INTO tb_instituicao (id, tipo) VALUES (1, 3);
-INSERT INTO tb_instituicao (id, tipo) VALUES (2, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (3, 4);
-INSERT INTO tb_instituicao (id, tipo) VALUES (4, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (5, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (6, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (7, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (8, 4);
-INSERT INTO tb_instituicao (id, tipo) VALUES (9, 1);
-INSERT INTO tb_instituicao (id, tipo) VALUES (10, 4);
-INSERT INTO tb_instituicao (id, tipo) VALUES (11, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (12, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (13, 4);
-INSERT INTO tb_instituicao (id, tipo) VALUES (14, 4);
-INSERT INTO tb_instituicao (id, tipo) VALUES (15, 1);
-INSERT INTO tb_instituicao (id, tipo) VALUES (16, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (17, 2);
-INSERT INTO tb_instituicao (id, tipo) VALUES (18, 4);
-INSERT INTO tb_instituicao (id, tipo) VALUES (19, 2);
-
-/*carga de telefone*/
-ALTER TABLE tb_telefone
-  AUTO_INCREMENT = 1;
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (1, 1, '2065493048', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (2, 1, '1551631233', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (3, 1, '3154441046', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (4, 2, '1245545664', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (5, 1, '6825138860', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (6, 1, '7241776023', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (6, 2, '8387624588', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (8, 1, '2716097609', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (9, 1, '1649415781', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (10, 3, '6105178144', FALSE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (11, 1, '9016432056', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (12, 1, '5864234446', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (13, 3, '3532835165', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (14, 1, '8582069261', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (15, 1, '8866961948', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (16, 3, '2933570150', FALSE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (17, 1, '2684137283', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (18, 1, '8638760448', TRUE);
-INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (19, 2, '5227242750', TRUE);
-
-/*carga municipio*/
-/*MS*/
-ALTER TABLE tb_municipio
-  AUTO_INCREMENT = 1;
+/*****************************************************************************************
+Carga Municipio
+******************************************************************************************/
+ALTER TABLE tb_municipio AUTO_INCREMENT = 1;
 INSERT INTO tb_municipio (codigo_ibge, nome, uf) VALUES (1, 'Coxim', 12);
 INSERT INTO tb_municipio (codigo_ibge, nome, uf) VALUES (2, 'Corumbá', 12);
 INSERT INTO tb_municipio (codigo_ibge, nome, uf) VALUES (3, 'Porto Murtinho', 12);
@@ -173,140 +80,168 @@ INSERT INTO tb_municipio (codigo_ibge, nome, uf) VALUES (64, 'São Paulo', 25);
 INSERT INTO tb_municipio (codigo_ibge, nome, uf) VALUES (65, 'Aracaju', 26);
 INSERT INTO tb_municipio (codigo_ibge, nome, uf) VALUES (66, 'Palmas', 27);
 
-/*carga de endereços*/
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (1, 'Rua 13 de Maio', '231', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (2, 'Rua Minas Gerais', '162', FALSE, 'casa residencial', 'Santa Maria', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (3, 'Rua Star wars', '231', FALSE, 'casa residencial', 'Vila Bela', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (4, 'Rua Game of Thornes', '231', FALSE, 'casa residencial', 'Vila Da Barra', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (5, 'Rua Pedro Abreu', '231', FALSE, 'casa residencial', 'Jardim Pequi 1', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (6, 'Rua Santo Agostinho', '231', FALSE, 'casa residencial', 'Centro', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (7, 'Rua Brother Wincherster', '231', FALSE, 'casa residencial', 'Nova Coxim', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (8, 'Rua Metamorfose Ambulante', '231', FALSE, 'casa residencial', 'Piracema', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (9, 'Rua 6 de Julho', '231', FALSE, 'casa residencial', 'Planalto', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (10, 'Rua Senhor Divino', '231', FALSE, 'casa residencial', 'Zona Rural', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (11, 'Rua Hoje em Dia', '231', FALSE, 'casa residencial', 'Eldorado', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (12, 'Rua Santa Catarina', '231', FALSE, 'casa residencial', 'Mato Grosso', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (13, 'Rua 10 de Dezembro', '231', FALSE, 'casa residencial', 'Santo André', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (14, 'Rua João Pessoa', '231', FALSE, 'casa residencial', 'Centro', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (15, 'Rua Governador Pedro', '231', FALSE, 'casa residencial', 'Centro', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (16, 'Av. Viriginia Ferreira', '231', FALSE, 'casa residencial', 'Pontal', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (17, 'Rua Filinto Miller', '231', FALSE, 'casa residencial', 'Vila Bela', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (18, 'Rua Gaspar Rias Coelho', '231', FALSE, 'casa residencial', 'Flávio Garcia', '7940000', 1);
-INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)
-VALUES (19, 'Rua Antônio João', '231', FALSE, 'casa residencial', 'Prevesul', '7940000', 1);
+/*****************************************************************************************
+Carga Instituicao
+******************************************************************************************/
+ALTER TABLE tb_usuario AUTO_INCREMENT = 1;
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Universidade Federal de Mato Grosso Do Sul - Câmpus de Coxim', 'cpcx@ufms.com.br', 'user', '123', STR_TO_DATE("31/05/2014", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Escola Estadual Silvio Feirreira', 'ufms1@com.br', 'user1', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Unopar', 'ufms2@com.br', 'user2', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('CESQP - Centro de Ensino Superior e Qualificação Profissional', 'ufms3@com.br', 'user3', '123',STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('UEMS - Campus Coxim', 'ufms4@com.br', 'user4', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Escola Estadual Padre Nunes', 'ufms5@com.br', 'user5', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Escola Novo Mundo', 'ufms6@com.br', 'user6', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('IFMS - Instituto Federal de Mato Grosso do Sul', 'ufms7@com.br', 'user7', '123',STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Escola Municipal Marechal Rondon', 'ufms8@com.br', 'user8', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Faculdades Integradas de Coxim - Fico', 'ufms9@com.br', 'user9', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Escola Estadual DE 1º E 2º GRAUS Sílvio Ferreira', 'ufms10@com.br', 'user10', '123',STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('EM Estudante William Tavares de Oliveira - Pólo', 'ufms11@com.br', 'user11', '123',STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Damásio Educacional e Ibmec - Coxim', 'ufms12@com.br', 'user12', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Colégio PROFª. Julieta Mota Dos Santos', 'ufms13@com.br', 'user13', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Escola Estadual Professora Clarice Rondon dos Santos', 'ufms14@com.br', 'user14', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"),'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Escola Estadual Viriato Bandeira', 'ufms15@com.br', 'user15', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Escola Estadual Semiramis da Rocha', 'ufms16@com.br', 'user16', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Escola Particular Santa Teresa', 'ufms17@com.br', 'user17', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo) VALUES ('Escola Estadual Pedro Mendes Fontoura', 'ufms18@com.br', 'user18', '123', STR_TO_DATE("14/02/2018", "%d/%m/%Y"), 'INSTITUICAO');
 
-/*carga de jogadores*/
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (1, STR_TO_DATE("31/01/2012", "%d/%m/%Y"), 1);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (2, STR_TO_DATE("02/02/2013", "%d/%m/%Y"), 2);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (3, STR_TO_DATE("21/03/2014", "%d/%m/%Y"), 3);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (4, STR_TO_DATE("03/04/2015", "%d/%m/%Y"), 4);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (5, STR_TO_DATE("05/05/2016", "%d/%m/%Y"), 1);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (6, STR_TO_DATE("23/06/2017", "%d/%m/%Y"), 2);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (7, STR_TO_DATE("25/07/2018", "%d/%m/%Y"), 3);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (8, STR_TO_DATE("31/08/2011", "%d/%m/%Y"), 4);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (9, STR_TO_DATE("30/09/2012", "%d/%m/%Y"), 1);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (10, STR_TO_DATE("12/10/2013", "%d/%m/%Y"), 2);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (11, STR_TO_DATE("16/11/2014", "%d/%m/%Y"), 4);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (12, STR_TO_DATE("21/12/2015", "%d/%m/%Y"), 3);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (13, STR_TO_DATE("13/01/2016", "%d/%m/%Y"), 1);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (14, STR_TO_DATE("07/02/2017", "%d/%m/%Y"), 2);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (15, STR_TO_DATE("05/03/2018", "%d/%m/%Y"), 4);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (16, STR_TO_DATE("07/04/2010", "%d/%m/%Y"), 3);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (17, STR_TO_DATE("03/05/2011", "%d/%m/%Y"), 1);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (18, STR_TO_DATE("13/06/2012", "%d/%m/%Y"), 2);
-INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (19, STR_TO_DATE("15/07/2013", "%d/%m/%Y"), 3);
+/* carga de endereços */
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (1, 'Rua 13 de Maio', '231', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio) VALUES (2, 'Rua Minas Gerais', '162', FALSE, 'casa residencial', 'Santa Maria', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (3, 'Rua Star wars', '231', FALSE, 'casa residencial', 'Vila Bela', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (4, 'Rua Game of Thornes', '231', FALSE, 'casa residencial', 'Vila Da Barra', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (5, 'Rua Pedro Abreu', '231', FALSE, 'casa residencial', 'Jardim Pequi 1', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (6, 'Rua Santo Agostinho', '231', FALSE, 'casa residencial', 'Centro', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (7, 'Rua Brother Wincherster', '231', FALSE, 'casa residencial', 'Nova Coxim', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (8, 'Rua Metamorfose Ambulante', '231', FALSE, 'casa residencial', 'Piracema', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (9, 'Rua 6 de Julho', '231', FALSE, 'casa residencial', 'Planalto', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (10, 'Rua Senhor Divino', '231', FALSE, 'casa residencial', 'Zona Rural', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (11, 'Rua Hoje em Dia', '231', FALSE, 'casa residencial', 'Eldorado', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (12, 'Rua Santa Catarina', '231', FALSE, 'casa residencial', 'Mato Grosso', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (13, 'Rua 10 de Dezembro', '231', FALSE, 'casa residencial', 'Santo André', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (14, 'Rua João Pessoa', '231', FALSE, 'casa residencial', 'Centro', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (15, 'Rua Governador Pedro', '231', FALSE, 'casa residencial', 'Centro', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (16, 'Av. Viriginia Ferreira', '231', FALSE, 'casa residencial', 'Pontal', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (17, 'Rua Filinto Miller', '231', FALSE, 'casa residencial', 'Vila Bela', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (18, 'Rua Gaspar Rias Coelho', '231', FALSE, 'casa residencial', 'Flávio Garcia', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (19, 'Rua Antônio João', '231', FALSE, 'casa residencial', 'Prevesul', '7940000', 1);
 
-/*carga de alunos*/
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(1, 1, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(2, 2, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(3, 3, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(4, 4, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(5, 5, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(6, 6, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(7, 7, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(8, 8, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(9, 9, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(10, 10, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(11, 11, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(12, 12, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(13, 13, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(14, 14, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(15, 15, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(16, 16, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(17, 17, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(18, 18, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
-INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(19, 19, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
+/* carga de telefones */
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (1, 1, '2065493048', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (2, 1, '1551631233', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (3, 1, '3154441046', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (4, 2, '1245545664', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (5, 1, '6825138860', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (6, 1, '7241776023', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (6, 2, '8387624588', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (8, 1, '2716097609', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (9, 1, '1649415781', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (10, 3, '6105178144', FALSE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (11, 1, '9016432056', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (12, 1, '5864234446', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (13, 3, '3532835165', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (14, 1, '8582069261', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (15, 1, '8866961948', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (16, 3, '2933570150', FALSE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (17, 1, '2684137283', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (18, 1, '8638760448', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (19, 2, '5227242750', TRUE);
 
-/*carga de professores*/
-INSERT INTO tb_professor(id, titulacao) VALUES (1, 1);
-INSERT INTO tb_professor(id, titulacao) VALUES (2, 2);
-INSERT INTO tb_professor(id, titulacao) VALUES (3, 3);
-INSERT INTO tb_professor(id, titulacao) VALUES (4, 4);
-INSERT INTO tb_professor(id, titulacao) VALUES (5, 5);
-INSERT INTO tb_professor(id, titulacao) VALUES (6, 6);
-INSERT INTO tb_professor(id, titulacao) VALUES (7, 1);
-INSERT INTO tb_professor(id, titulacao) VALUES (8, 2);
-INSERT INTO tb_professor(id, titulacao) VALUES (9, 3);
-INSERT INTO tb_professor(id, titulacao) VALUES (10, 4);
-INSERT INTO tb_professor(id, titulacao) VALUES (11, 5);
-INSERT INTO tb_professor(id, titulacao) VALUES (12, 6);
-INSERT INTO tb_professor(id, titulacao) VALUES (13, 1);
-INSERT INTO tb_professor(id, titulacao) VALUES (14, 2);
-INSERT INTO tb_professor(id, titulacao) VALUES (15, 3);
-INSERT INTO tb_professor(id, titulacao) VALUES (16, 4);
-INSERT INTO tb_professor(id, titulacao) VALUES (17, 5);
-INSERT INTO tb_professor(id, titulacao) VALUES (18, 6);
-INSERT INTO tb_professor(id, titulacao) VALUES (19, 1);
+INSERT INTO tb_instituicao (id, tipo) VALUES (1, 3);
+INSERT INTO tb_instituicao (id, tipo) VALUES (2, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (3, 4);
+INSERT INTO tb_instituicao (id, tipo) VALUES (4, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (5, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (6, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (7, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (8, 4);
+INSERT INTO tb_instituicao (id, tipo) VALUES (9, 1);
+INSERT INTO tb_instituicao (id, tipo) VALUES (10, 4);
+INSERT INTO tb_instituicao (id, tipo) VALUES (11, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (12, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (13, 4);
+INSERT INTO tb_instituicao (id, tipo) VALUES (14, 4);
+INSERT INTO tb_instituicao (id, tipo) VALUES (15, 1);
+INSERT INTO tb_instituicao (id, tipo) VALUES (16, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (17, 2);
+INSERT INTO tb_instituicao (id, tipo) VALUES (18, 4);
+INSERT INTO tb_instituicao (id, tipo) VALUES (19, 2);
 
-/*carga de responsaveis*/
-INSERT INTO tb_responsavel(id, cpf) VALUES (1, '001');
-INSERT INTO tb_responsavel(id, cpf) VALUES (2, '002');
-INSERT INTO tb_responsavel(id, cpf) VALUES (3, '003');
-INSERT INTO tb_responsavel(id, cpf) VALUES (4, '004');
-INSERT INTO tb_responsavel(id, cpf) VALUES (5, '005');
-INSERT INTO tb_responsavel(id, cpf) VALUES (6, '006');
-INSERT INTO tb_responsavel(id, cpf) VALUES (7, '007');
-INSERT INTO tb_responsavel(id, cpf) VALUES (8, '008');
-INSERT INTO tb_responsavel(id, cpf) VALUES (9, '009');
-INSERT INTO tb_responsavel(id, cpf) VALUES (10, '010');
-INSERT INTO tb_responsavel(id, cpf) VALUES (11, '011');
-INSERT INTO tb_responsavel(id, cpf) VALUES (12, '012');
-INSERT INTO tb_responsavel(id, cpf) VALUES (13, '013');
-INSERT INTO tb_responsavel(id, cpf) VALUES (14, '014');
-INSERT INTO tb_responsavel(id, cpf) VALUES (15, '015');
-INSERT INTO tb_responsavel(id, cpf) VALUES (16, '016');
-INSERT INTO tb_responsavel(id, cpf) VALUES (17, '017');
-INSERT INTO tb_responsavel(id, cpf) VALUES (18, '018');
-INSERT INTO tb_responsavel(id, cpf) VALUES (19, '019');
+/*****************************************************************************************
+Carga Aluno
+******************************************************************************************/
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Diego Armando Maradona', 'diego.maradona@ufms.br', 'dieguito', '2424', STR_TO_DATE("08/03/2018", "%d/%m/%Y"), 'ALUNO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Cunha Afonso da Silva', 'afonso.123@ufms.br', 'afonso123', '2294', STR_TO_DATE("08/03/2018", "%d/%m/%Y"), 'ALUNO');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Marcos Pedro Bezerra', 'marcos.pedro@ufms.br', 'megaware', '6294', STR_TO_DATE("08/03/2018", "%d/%m/%Y"), 'ALUNO');
 
-/*carga de turmas*/
-INSERT INTO tb_turma(id, professor_id, instituicao_id, nome, periodo) VALUES (1, 1, 1, 'turma a', 1);
-INSERT INTO tb_turma(id, professor_id, instituicao_id, nome, periodo) VALUES (2, 2, 2, 'turma b', 2);
-INSERT INTO tb_turma(id, professor_id, instituicao_id, nome, periodo) VALUES (3, 3, 3, 'turma c', 3);
-INSERT INTO tb_turma(id, professor_id, instituicao_id, nome, periodo) VALUES (4, 4, 4, 'turma d', 4);
-INSERT INTO tb_turma(id, professor_id, instituicao_id, nome, periodo) VALUES (5, 5, 5, 'turma e', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio) VALUES (20, 'Rua 13 de Maio', '231', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio) VALUES (21, 'Rua 13 de Maio', '231', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 3);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio) VALUES (22, 'Rua 13 de Maio', '231', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 2);
 
-/*carga de series*/
-INSERT INTO tb_serie(aluno_id, ano, nivel) VALUES (1, true, 1);
-INSERT INTO tb_serie(aluno_id, ano, nivel) VALUES (2, true, 2);
-INSERT INTO tb_serie(aluno_id, ano, nivel) VALUES (3, true, 3);
-INSERT INTO tb_serie(aluno_id, ano, nivel) VALUES (4, true, 4);
-INSERT INTO tb_serie(aluno_id, ano, nivel) VALUES (5, true, 1);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (20, 1, '2065493048', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (21, 1, '6065793348', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (22, 1, '9035443748', TRUE);
+
+INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (20, STR_TO_DATE("19/12/1994", "%d/%m/%Y"), 1);
+INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (21, STR_TO_DATE("21/04/1995", "%d/%m/%Y"), 1);
+INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (22, STR_TO_DATE("13/02/2000", "%d/%m/%Y"), 1);
+
+INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(20, 1, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
+INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(21, 1, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
+INSERT INTO tb_aluno(id, instituicao_id, data_inicio) VALUES(22, 1, STR_TO_DATE("03/03/2018", "%d/%m/%Y"));
+
+/*****************************************************************************************
+Carga Professor
+******************************************************************************************/
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Kleber Kruger', 'kleber.kruger@ufms.br', 'kleberkruguer', 'senha123',STR_TO_DATE("08/03/2018", "%d/%m/%Y"),'PROFESSOR');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Zézão', 'ze@ufms.br', 'ze', 'ze123',STR_TO_DATE("08/03/2018", "%d/%m/%Y"), 'PROFESSOR');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Vinnicius Marques', 'vini.marq@ufms.br', 'marq123', '123marq',STR_TO_DATE("08/03/2018", "%d/%m/%Y"), 'PROFESSOR');
+
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (23, 'Rua 13 de Maio', '231', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (24, 'Rua 13 de Maio', '231', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (25, 'Rua 13 de Maio', '231', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
+
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (23, 1, '2065493048', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (24, 1, '2065493048', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (25, 1, '2065493048', TRUE);
+
+INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (23, STR_TO_DATE("31/01/2012", "%d/%m/%Y"), 1);
+INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (24, STR_TO_DATE("31/01/2012", "%d/%m/%Y"), 1);
+INSERT INTO tb_jogador(id, data_nascimento, deficiencias) VALUES (25, STR_TO_DATE("31/01/2012", "%d/%m/%Y"), 1);
+
+INSERT INTO tb_professor(id, titulacao) VALUES (23, 1);
+INSERT INTO tb_professor(id, titulacao) VALUES (24, 1);
+INSERT INTO tb_professor(id, titulacao) VALUES (25, 1);
+
+/*****************************************************************************************
+Carga Responsavel
+******************************************************************************************/
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Júlia', 'julia@ufms.com.br', 'juliauser', '123', STR_TO_DATE("08/03/2018", "%d/%m/%Y"), 'RESPONSAVEL');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Sofia', 'sofia@ufms.com.br', 'sofiauser', '123', STR_TO_DATE("08/03/2018", "%d/%m/%Y"), 'RESPONSAVEL');
+INSERT INTO tb_usuario (nome, email, usuario, senha, data_criacao, tipo)VALUES ('Alice', 'alice@ufms.com.br', 'aliceuser', '123', STR_TO_DATE("08/03/2018", "%d/%m/%Y"), 'RESPONSAVEL');
+
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (26, 'Rua muse elf', '123', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (27, 'Rua dark lord', '235', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
+INSERT INTO tb_endereco (id, logradouro, numero, s_n, complemento, bairro, cep, codigo_municipio)VALUES (28, 'Rua soul master', '246', FALSE, 'casa residencial', 'São Judas Tadeu', '7940000', 1);
+
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (26, 1, '2065493048', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (27, 1, '2065493048', TRUE);
+INSERT INTO tb_telefone (usuario_id, tipo, numero, principal) VALUES (28, 1, '2065493048', TRUE);
+
+INSERT INTO tb_responsavel(id, cpf) VALUES (26, '001');
+INSERT INTO tb_responsavel(id, cpf) VALUES (27, '002');
+INSERT INTO tb_responsavel(id, cpf) VALUES (28, '003');
+
+
+/*****************************************************************************************
+Carga Turma
+******************************************************************************************/
+INSERT INTO tb_turma(id, professor_id, instituicao_id, nome, periodo) VALUES (1, 23, 1, 'turma a', 'MATUTINO');
+INSERT INTO tb_turma(id, professor_id, instituicao_id, nome, periodo) VALUES (2, 24, 2, 'turma b', 'VESPERTINO');
+INSERT INTO tb_turma(id, professor_id, instituicao_id, nome, periodo) VALUES (5, 25, 3, 'turma c', 'NOTURNO');
+
+/*****************************************************************************************
+Carga Serie
+******************************************************************************************/
+INSERT INTO tb_serie(aluno_id, ano, nivel) VALUES (20, '1º ano', 'FUNDAMENTAL');
+INSERT INTO tb_serie(aluno_id, ano, nivel) VALUES (21, '2º ano', 'SUPERIOR');
+INSERT INTO tb_serie(aluno_id, ano, nivel) VALUES (22, '3º ano', 'MEDIO');
